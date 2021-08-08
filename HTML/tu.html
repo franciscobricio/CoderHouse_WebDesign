@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400;1,900&display=swap" rel="stylesheet">
+    <title>Sociedad Mahler</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container container-nav">
+        <!--Logo-->
+        <div class="logo">
+          <a href="index.html">
+            <img id="logo" src="./img/logo.png" alt="Logo Sociedad Mahler" />
+          </a>
+        </div>
+
+        <nav>
+          <!--Menu Principal-->
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./sociedad.html">La Sociedad</a></li>
+            <li><a href="./mahler.html">Mahler</a></li>
+            <li><a class="menuactivo" href="./tu.html">...y Tu</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+      <!--Foto de Encabezado-->
+      <div class="contenedor">
+        <img src="./img/mahler4.jpg" class="img" alt="Foto de Mahler" /> 
+      </div>
+    </p>
+
+    <h1>...y Tu!</h1>
+    <h2>Formulario de Contacto</h2>
+
+    <!--Titulo-->
+    <section>
+      <div class="formcontainer">
+      <form>
+        <label for="nom">Nombre</label>
+        <input type="text" id="nom" name="nombre" placeholder="Su nombre..." />
+        <br />
+
+        <label for="ape">Apellido</label>
+        <input
+          type="text"
+          id="ape"
+          name="apellido"
+          placeholder="Su apellido..."
+        />
+        <br />
+
+        <label for="mail">Correo Electrónico</label>
+        <input type="email" id="mail" name="email" placeholder="nombre@correo.com" />
+        <br />
+        <br>
+
+        <label>Desea recibir nuestro boletin?</label>
+        <input type="checkbox"
+        id="bol"
+          name="boletin"
+          value="1"
+        ></checkbox>
+        <br />
+        <br />
+
+        <label for="pai">País</label>
+        <select id="pai" name="pais">
+          <option value="México">México</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Chile">Chile</option>
+        </select>
+        <br />
+        <br />
+
+        <label for="com">Comentarios</label>
+        <textarea
+          id="com"
+          name="comentario"
+          placeholder="Sus comentarios..."
+        ></textarea>
+        <br />
+        <br />
+
+        <input type="reset" value="Limpiar Formulario" />
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+    </section>
+
+    <!--Pie de Página-->
+    <hr>
+    <footer>
+      <p>Hecho en <em>México</em> <strong>2021</strong></p>
+      <a class="aviso" href="privacidad.html">Aviso de Privacidad</a>
+    </footer>
+  </body>
+</html>

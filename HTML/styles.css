@@ -1,0 +1,529 @@
+:root {
+  --fullwidth: 90%;
+}
+/* --------------------------------------------------
+Tablas 
+----------------------------------------------------*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #00873d;
+  color: white;
+}
+
+tr {
+  font-family: "Montserrat", sans-serif;
+  color: grey;
+}
+
+/* --------------------------------------------------
+Menu Encabezado
+----------------------------------------------------*/
+header {
+  /* background-color: #05004e; */
+  padding: 0.8em 0;
+  box-shadow: 2px 2px 10px #f1f6f9;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 720px) {
+  .container {
+    text-align: center;
+  }
+
+  .container-nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+
+  nav li {
+    margin-left: 1em;
+  }
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #00873d;
+}
+
+/* --------------------------------------------------
+Imagenes 
+----------------------------------------------------*/
+.img {
+  width: 100%;
+}
+
+.img:hover {
+  opacity: 0.8;
+}
+
+/* --------------------------------------------------
+Encabezados y Textos 
+----------------------------------------------------*/
+
+h1 {
+  color: #4f4b76;
+  font-family: "Montserrat", sans-serif;
+  font-size: xx-large;
+}
+
+h2 {
+  color: #00873d;
+  font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+  color: #2f0087;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  color: grey;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: grey;
+  font-family: "Montserrat", sans-serif;
+}
+
+.quote {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  text-align: right;
+  color: white;
+  background-image: linear-gradient(to right, white, #4f4b76);
+}
+
+.quote:hover {
+  -moz-box-shadow: 0 0 10px #777;
+  -webkit-box-shadow: 0 0 10px #777;
+  box-shadow: 0 0 10px #777;
+}
+
+.aviso {
+  font-size: x-small;
+}
+
+/* --------------------------------------------------
+Formularios 
+----------------------------------------------------*/
+
+.formcontainer {
+  width: 500px;
+  clear: both;
+  font-family: "Montserrat", sans-serif;
+}
+
+.formcontainer input {
+  width: 100%;
+  clear: both;
+  font-family: "Montserrat", sans-serif;
+}
+
+input[type="text"],
+select {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 300px;
+  height: 150px;
+}
+
+input[type="reset"] {
+  background-color: #4f4b76;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  background-color: #00873d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* --------------------------------------------------
+Listas
+----------------------------------------------------*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dddddd;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+
+li a:hover {
+  background-color: rgb(190, 190, 190);
+}
+
+.menuactivo {
+  color: #ddd;
+  background-color: #4f4b76;
+}
+
+/* --------------------------------------------------
+Bloques - Box Modeling
+----------------------------------------------------*/
+
+.centercontainer {
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 720px) {
+  .centercontainer {
+    text-align: center;
+    width: 80%;
+  }
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.avatar {
+  float: left;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin: 10px;
+}
+
+.bio {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 970px) {
+  .bio {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+section {
+  margin: 10px;
+  align-items: center;
+}
+
+section article {
+  display: flex;
+  align-items: top;
+  font-family: "Montserrat", sans-serif;
+  color: grey;
+  background-color: #cccccc;
+  width: 400px;
+  height: 300px;
+  padding: 30px;
+  align: center;
+}
+
+section article p {
+  line-height: 4;
+}
+
+#contacto {
+  font-size: small;
+  text-align: center;
+  color: rgb(41, 41, 41);
+  background-color: #fbbf0e;
+
+  position: fixed;
+  top: 160px;
+  right: 35px;
+}
+
+@media (max-width: 720px) {
+  #contacto {
+    font-size: x-small;
+    text-align: center;
+    color: rgb(41, 41, 41);
+    background-color: transparent;
+    height: 10px;
+    width: 40px;
+
+    position: absolute;
+    top: 110px;
+    right: 35px;
+  }
+}
+/* --------------------------------------------------
+Grids 
+----------------------------------------------------*/
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  gap: 5px;
+  font-family: "Montserrat", sans-serif;
+  color: grey;
+}
+
+.periodo {
+  grid-column: 1;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  color: #ddd;
+  background-color: #4f4b76;
+}
+.obra {
+  grid-column: 2;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  color: #ddd;
+  background-color: #4f4b76;
+}
+.ciudad {
+  grid-column: 3;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  color: #ddd;
+  background-color: #4f4b76;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wunderhorn {
+  grid-column: 1;
+  grid-row-start: 2;
+  grid-row-end: 8;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.musical {
+  grid-column: 1;
+  grid-row-start: 8;
+  grid-row-end: 11;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.despedida {
+  grid-column: 1;
+  grid-row-start: 11;
+  grid-row-end: 15;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.kl {
+  grid-column: 2;
+  grid-row: 2;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.fg {
+  grid-column: 2;
+  grid-row: 3;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.one {
+  grid-column: 2;
+  grid-row: 4;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.two {
+  grid-column: 2;
+  grid-row: 5;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.three {
+  grid-column: 2;
+  grid-row: 6;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+.four {
+  grid-column: 2;
+  grid-row: 7;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.five {
+  grid-column: 2;
+  grid-row: 8;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+.six {
+  grid-column: 2;
+  grid-row: 9;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+.seven {
+  grid-column: 2;
+  grid-row: 10;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.eight {
+  grid-column: 2;
+  grid-row: 11;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+.daslied {
+  grid-column: 2;
+  grid-row: 12;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+.nine {
+  grid-column: 2;
+  grid-row: 13;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.ten {
+  grid-column: 2;
+  grid-row: 14;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.c1 {
+  grid-column: 3;
+  grid-row: 2;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.c2 {
+  grid-column: 3;
+  grid-row: 3;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.c3 {
+  grid-column: 3;
+  grid-row: 4;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.c4 {
+  grid-column: 3;
+  grid-row: 5;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.c5 {
+  grid-column: 3;
+  grid-row: 6;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.c6 {
+  grid-column: 3;
+  grid-row-start: 7;
+  grid-row-end: 12;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  align-self: center;
+}
+
+.c7 {
+  grid-column: 3;
+  grid-row-start: 13;
+  grid-row-end: 16;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  align-self: center;
+}
