@@ -9,13 +9,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400;1,900&display=swap" rel="stylesheet">
+    <!-- Bootstrap-->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Sociedad Mahler</title>
   </head>
 
   <body>
 
     <header>
-      <div class="container container-nav">
+      <div class="contenedor contenedor-nav">
         <!--Logo-->
         <div class="logo">
           <a href="index.html">
@@ -41,61 +56,78 @@
       </div>
     </p>
 
+    <div class=container">
     <h1>...y Tu!</h1>
     <h2>Formulario de Contacto</h2>
+    </div>  
 
     <!--Titulo-->
     <section>
-      <div class="formcontainer">
-      <form>
+      <div class="container">
+      <form action="#">
+        <div class="form-group">
         <label for="nom">Nombre</label>
-        <input type="text" id="nom" name="nombre" placeholder="Su nombre..." />
-        <br />
+        <input 
+          class="form-control" 
+          type="text" 
+          class="form-control" 
+          id="nom" name="nombre" 
+          placeholder="Su nombre..." />
+        </div>
 
-        <label for="ape">Apellido</label>
-        <input
-          type="text"
-          id="ape"
-          name="apellido"
-          placeholder="Su apellido..."
-        />
-        <br />
+        <div class="form-group">
+          <label for="ape">Apellido</label>
+          <input
+            class="form-control" 
+            type="text"
+            id="ape"
+            name="apellido"
+            placeholder="Su apellido...">
+        </div>
 
+      <div class="form-group">
         <label for="mail">Correo Electrónico</label>
-        <input type="email" id="mail" name="email" placeholder="nombre@correo.com" />
-        <br />
-        <br>
+        <input 
+          class="form-control" 
+          type="email" 
+          id="mail" 
+          name="email" 
+          placeholder="nombre@correo.com">
+      </div>
 
+      <div class="form-group">
         <label>Desea recibir nuestro boletin?</label>
-        <input type="checkbox"
-        id="bol"
+        <input 
+          type="checkbox"
+          id="bol"
           name="boletin"
           value="1"
         ></checkbox>
-        <br />
-        <br />
+      </div>
 
+      <div class="form-group">
         <label for="pai">País</label>
         <select id="pai" name="pais">
           <option value="México">México</option>
           <option value="Argentina">Argentina</option>
           <option value="Chile">Chile</option>
         </select>
-        <br />
-        <br />
+        </div>
 
+        <div class="form-group">
         <label for="com">Comentarios</label>
         <textarea
+        class="form-control" 
           id="com"
           name="comentario"
           placeholder="Sus comentarios..."
         ></textarea>
-        <br />
-        <br />
+        </div>
 
         <input type="reset" value="Limpiar Formulario" />
 
         <input type="submit" value="Enviar" />
+      </div>
       </form>
     </div>
     </section>

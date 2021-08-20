@@ -38,23 +38,23 @@ header {
   box-shadow: 2px 2px 10px #f1f6f9;
 }
 
-.container {
+.contenedor {
   width: 95%;
   margin: 0 auto;
 }
 
-.container-nav {
+.contenedor-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 @media (max-width: 720px) {
-  .container {
+  .contenedor {
     text-align: center;
   }
 
-  .container-nav {
+  .contenedor-nav {
     flex-direction: column;
   }
 
@@ -92,7 +92,6 @@ Imagenes
 /* --------------------------------------------------
 Encabezados y Textos 
 ----------------------------------------------------*/
-
 h1 {
   color: #4f4b76;
   font-family: "Montserrat", sans-serif;
@@ -141,13 +140,13 @@ a {
 Formularios 
 ----------------------------------------------------*/
 
-.formcontainer {
+.formcontenedor {
   width: 500px;
   clear: both;
   font-family: "Montserrat", sans-serif;
 }
 
-.formcontainer input {
+.formcontenedor input {
   width: 100%;
   clear: both;
   font-family: "Montserrat", sans-serif;
@@ -235,13 +234,13 @@ li a:hover {
 Bloques - Box Modeling
 ----------------------------------------------------*/
 
-.centercontainer {
+.centercontenedor {
   text-align: center;
   width: 100%;
 }
 
 @media (max-width: 720px) {
-  .centercontainer {
+  .centercontenedor {
     text-align: center;
     width: 80%;
   }
@@ -292,6 +291,7 @@ section article p {
 }
 
 #contacto {
+  z-index: 9;
   font-size: small;
   text-align: center;
   color: rgb(41, 41, 41);

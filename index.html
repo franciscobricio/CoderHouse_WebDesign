@@ -12,12 +12,29 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Bootstrap-->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Sociedad Mahler</title>
   </head>
 
   <body>
+
     <header>
-      <div class="container container-nav">
+      <div class="contenedor contenedor-nav">
         <!--Logo-->
         <div class="logo">
           <a href="index.html">
@@ -41,16 +58,36 @@
       <a href="./tu.html">Registro</a>
     </div>
 
-    <!--Foto de Encabezado-->
-    <div class="contenedor">
-      <img src="./img/mahler.jpeg" class="img" alt="Foto de Mahler" />
+    <!--Carousel de Encabezado-->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="./img/mahler.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./img/mahler2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/mahler3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
-    <!--Titulo-->
-    <section>
+    <div class=container">
       <h1>Sociedad Mahler</h1>
-      <hr />
-      <h2>Bienvenido</h2>
+      <h2>Bienvenidos</h2>
+     </div>
+
+    <!--Titulo-->
+    <section class="container">
       <p>
         La Sociedad Mahler tiene como misión la educación, promoción, difusión y
         fomento de la música clásica en lo general y de la obra de Gustav Mahler
@@ -104,7 +141,7 @@
         <br />- Gustav Mahler
       </div>
       <br />
-      <div class="centercontainer">
+      <div class="centercontenedor">
         <iframe
           width="520"
           height="315"
@@ -120,7 +157,7 @@
 
     <!--Pie de Página-->
     <hr />
-    <footer>
+    <footer class="container">
       <p>Hecho en <em>México</em> <strong>2021</strong></p>
       <a class="aviso" href="privacidad.html">Aviso de Privacidad</a>
     </footer>

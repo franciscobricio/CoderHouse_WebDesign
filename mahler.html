@@ -9,13 +9,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400;1,900&display=swap" rel="stylesheet">
+    <!-- Bootstrap-->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
+
     <title>Sociedad Mahler</title>
   </head>
 
   <body>
 
     <header>
-      <div class="container container-nav">
+      <div class="contenedor contenedor-nav">
         <!--Logo-->
         <div class="logo">
           <a href="index.html">
@@ -46,33 +62,57 @@
     </p>
 
     <!--Titulo-->
+    <div class=container">
       <h1>Quién es Gustav Mahler?</h1>
       <h2>Vida y Obra del Músico</h2>
+
       <p>
-        En la primera década del siglo XX, Gustav Mahler fue uno de los más importantes directores de orquesta y de ópera de su momento. Después de graduarse en el Conservatorio de Viena en 1878, fue sucesivamente director de varias orquestas cada vez más importantes en diversos teatros de ópera europeos, llegando en 1897 a la que entonces se consideraba la más notable: la dirección de la Ópera de la Corte de Viena (Hofoper). <br><br>Durante sus diez años en la capital austriaca, Mahler —judío converso al catolicismo— sufrió la oposición y hostilidad de la prensa antisemita. Sin embargo, gracias a sus innovadoras producciones y a la insistencia en los más altos niveles de representación, se granjeó el reconocimiento como uno de los más grandes directores de ópera, particularmente como intérprete de las óperas de Richard Wagner y de Wolfgang Amadeus Mozart. <br><br>Posteriormente, fue director de la Metropolitan Opera House y de la Orquesta Filarmónica de Nueva York.<br><br>
+        En la primera década del siglo XX, Gustav Mahler fue uno de los <mark>más importantes directores de orquesta y de ópera de su momento.</mark> Después de graduarse en el Conservatorio de Viena en 1878, fue sucesivamente director de varias orquestas cada vez más importantes en diversos teatros de ópera europeos, llegando en 1897 a la que entonces se consideraba la más notable: la dirección de la Ópera de la Corte de Viena (Hofoper). <br><br>Durante sus diez años en la capital austriaca, Mahler —judío converso al catolicismo— sufrió la oposición y hostilidad de la prensa antisemita. Sin embargo, gracias a sus innovadoras producciones y a la insistencia en los más altos niveles de representación, se granjeó el reconocimiento como uno de los más grandes directores de ópera, particularmente como intérprete de las óperas de Richard Wagner y de Wolfgang Amadeus Mozart. <br><br>Posteriormente, fue director de la Metropolitan Opera House y de la Orquesta Filarmónica de Nueva York.<br><br>
         Como compositor, centró sus esfuerzos en la forma sinfónica y en el lied. La Segunda, Tercera, Cuarta y Octava sinfonías y Das Lied von der Erde (La canción de la Tierra) conjugaron en sus partituras ambos géneros. <br><br>Él mismo advertía que componer una sinfonía era «construir un mundo con todos los medios posibles», por lo que sus trabajos en este campo se caracterizan por una amplísima heterogeneidad. <br><br>Introdujo elementos de distinta procedencia como melodías populares, marchas, fanfarrias militares, mediante un uso personal del acorde, entrecortando o alargando inusitadamente las líneas melódicas, acoplados o yuxtapuestos en el interior del marco formal que absorbió de la tradición clásica vienesa. <br><br>Sus obras sinfónicas adquirieron desmesuradas proporciones e incluían armonías disonantes que sobrepasan el cromatismo utilizado por Wagner en su Tristán e Isolda. La apariencia del desorden que resultaba, con el esfuerzo extra que demandaba reconocer alguna formalidad «clásica» en su estructura, generó la incomprensión de su música, atrayéndole una hostilidad casi general, pese al apoyo de una minoría entusiasta entre la que se contaban los miembros de la Segunda Escuela de Viena, que lo tenían por su más directo precursor.
       </p>
+    </div>
 
       <!--Boxes de Mahler Joven y Adulto-->
-<div class="bio">
-      <section>
-        <article>
-          <h2>Mahler de Joven</h2>
-          <span><img class="avatar" src="./img/Mahler-young.jpg" alt="Mahler Joven" width="160" height="240"></span>
-          <span>Mahler compuso su primer sinfonía en el año de 1880,con apénas 20 años de edad. <br><br>Inicialmente la compuso como un "Poema Sinfónico", pero posteriormente la rebautizó como "Titán".
-          </span>
-        </article>
-      </section>
-      
-      <section>
-        <article>
-          <h2>Mahler Adulto</h2>
-          <span><img class="avatar" src="./img/Mahler-old.jpg" alt="Mahler Viejo" width="160" height="240"></span>
-          <span>Mahler solo alcanzó a componer 9 Sinfonías y "La Cancion de la Tierra" ya que murió a la edad de 50 años. <br><br>La Décima sinfonía la terminó, pero solo orquestó uno de los movimientos.
-          </span>
-        </article>	
-      </section>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card">
+          <img src="./img/Mahler-boy.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mahler Niño</h5>
+            <p class="card-text">Esta es la primer foto que se conoce de Mahler. Tiene 5 años y en ella aparece con una mirada triste y con una partitura en su mano izquierda. <br><br>La foto es del año de 1865.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <img src="./img/Mahler-young.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mahler Joven</h5>
+            <p class="card-text">Mahler compuso su primer sinfonía en el año de 1880,con apénas 20 años de edad. <br><br>Inicialmente la compuso como un "Poema Sinfónico", pero posteriormente la rebautizó como "Titán".</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <img src="./img/Mahler-old.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mahler Adulto</h5>
+            <p class="card-text">Mahler solo alcanzó a componer 9 Sinfonías y "La Cancion de la Tierra" ya que murió a la edad de 50 años. <br><br>La Décima sinfonía la terminó, pero solo orquestó uno de los movimientos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <img src="./img/Mahler-Last.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ultima Foto</h5>
+            <p class="card-text">Esta es la última foto de Mahler, se encuentra en el barco que lo llevaría de regreso de Nueva York a Austria para morir un par de meses después.</p>
+          </div>
+        </div>
+      </div>
     </div>
+
 
         <!--Grid-->
         <div class="wrapper">
@@ -110,7 +150,7 @@
 
     <!--Pie de Página-->
     <hr>
-    <footer>
+    <footer class="container">
       <p>Hecho en <em>México</em> <strong>2021</strong></p>
       <a class="aviso" href="privacidad.html">Aviso de Privacidad</a>
     </footer>
