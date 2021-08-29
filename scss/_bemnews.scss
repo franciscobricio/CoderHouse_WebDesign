@@ -1,0 +1,47 @@
+/* --------------------------------------------------
+BEMNEWS.SCSS
+----------------------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+.envoltura {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.newsletter {
+  text-align: center;
+  color: $primario;
+  font-size: x-large;
+}
+
+.newsletter .newsletter__encabezado {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter .newsletter__email {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  min-width: 300px;
+}
+
+.newsletter .newsletter__boton {
+  padding: 0.5rem;
+  color: $blanco2;
+  background: $blanco;
+  font-size: 16px;
+}
+
+.newsletter .newsletter__boton.newsletter__boton--accion {
+  background: $primario;
+  border-color: $gris;
+  color: $blanco;
+}

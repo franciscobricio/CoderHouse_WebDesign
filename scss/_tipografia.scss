@@ -1,0 +1,44 @@
+/* --------------------------------------------------
+TIPOGRAFIA.SCSS
+----------------------------------------------------*/
+
+/* Encabezados y Textos */
+
+h1 {
+  color: $primario;
+  font-size: xx-large;
+}
+
+h2 {
+  color: $secundario;
+}
+
+h3 {
+  color: $terciario;
+}
+
+p {
+  color: $gris;
+}
+
+a {
+  color: $gris;
+}
+
+.quote {
+  font-family: $fuente-cita;
+  font-style: italic;
+  text-align: right;
+  color: $blanco;
+  background-image: linear-gradient(to right, $blanco, $primario);
+}
+
+.quote:hover {
+  -moz-box-shadow: 0 0 10px $gris;
+  -webkit-box-shadow: 0 0 10px $gris;
+  box-shadow: 0 0 10px $gris;
+}
+
+.aviso {
+  font-size: x-small;
+}

@@ -1,0 +1,170 @@
+/* --------------------------------------------------
+GRIDS.SCSS
+----------------------------------------------------*/
+
+/* Grids */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  gap: 5px;
+  font-family: $fuente, sans-serif;
+  color: $gris;
+}
+
+.periodo {
+  grid-column: 1;
+  border-bottom: 1px solid $obscuro;
+  border-right: 1px solid $obscuro;
+  color: $blanco2;
+  background-color: $primario;
+}
+.obra {
+  grid-column: 2;
+  border-bottom: 1px solid $obscuro;
+  border-right: 1px solid $obscuro;
+  color: $blanco2;
+  background-color: $primario;
+}
+.ciudad {
+  grid-column: 3;
+  border-bottom: 1px solid $obscuro;
+  border-right: 1px solid $obscuro;
+  color: $blanco2;
+  background-color: $primario;
+  font-family: $fuente, sans-serif;
+}
+
+.wunderhorn {
+  grid-column: 1;
+  grid-row-start: 2;
+  grid-row-end: 8;
+  border-bottom: 1px solid $obscuro;
+  border-right: 1px solid $obscuro;
+}
+
+.musical {
+  grid-column: 1;
+  grid-row-start: 8;
+  grid-row-end: 11;
+  border-bottom: 1px solid $obscuro;
+  border-right: 1px solid $obscuro;
+}
+
+.despedida {
+  grid-column: 1;
+  grid-row-start: 11;
+  grid-row-end: 15;
+  border-bottom: 1px solid $obscuro;
+  border-right: 1px solid $obscuro;
+}
+
+.kl {
+  grid-column: 2;
+  grid-row: 2;
+  border-bottom: 1px solid $obscuro;
+  border-right: 1px solid $obscuro;
+}
+
+.fg {
+  grid-column: 2;
+  grid-row: 3;
+  border-bottom: 1px solid $obscuro;
+  border-right: 1px solid $obscuro;
+}
+
+.one {
+  grid-column: 2;
+  grid-row: 4;
+  border-bottom: 1px solid $obscuro;
+  border-right: 1px solid $obscuro;
+}
+
+.two {
+  grid-column: 2;
+  grid-row: 5;
+  border-bottom: 1px solid $obscuro;
+  border-right: 1px solid $obscuro;
+}
+
+.three {
+  grid-column: 2;
+  grid-row: 6;
+  border-bottom: 1px solid $obscuro;
+  border-right: 1px solid $obscuro;
+}
+.four {
+  grid-column: 2;
+  grid-row: 7;
+  border-bottom: 1px solid $obscuro;
+  border-right: 1px solid $obscuro;
+}
+
+.five {
+  grid-column: 2;
+  grid-row: 8;
+  border-bottom: 1px solid $obscuro;
+  border-right: 1px solid $obscuro;
+}
+.six {
+  grid-column: 2;
+  grid-row: 9;
+  border-bottom: 1px solid $obscuro;
+  border-right: 1px solid $obscuro;
+}
+.seven {
+  grid-column: 2;
+  grid-row: 10;
+  border-bottom: 1px solid $obscuro;
+  border-right: 1px solid $obscuro;
+}
+
+.eight {
+  grid-column: 2;
+  grid-row: 11;
+  border-bottom: 1px solid $obscuro;
+  border-right: 1px solid $obscuro;
+}
+.daslied {
+  grid-column: 2;
+  grid-row: 12;
+  border-bottom: 1px solid $obscuro;
+  border-right: 1px solid $obscuro;
+}
+.nine {
+  grid-column: 2;
+  grid-row: 13;
+  border-bottom: 1px solid $obscuro;
+  border-right: 1px solid $obscuro;
+}
+
+.ten {
+  grid-column: 2;
+  grid-row: 14;
+  border-bottom: 1px solid $obscuro;
+  border-right: 1px solid $obscuro;
+}
+
+@for $i from 1 through 5 {
+  .c#{$i} {
+    grid-column: 3;
+    grid-row: #{$i + 1};
+    border: 1px solid $obscuro;
+  }
+}
+
+.c6 {
+  grid-column: 3;
+  grid-row-start: 7;
+  grid-row-end: 12;
+  border: 1px solid $obscuro;
+  align-self: center;
+}
+
+.c7 {
+  grid-column: 3;
+  grid-row-start: 13;
+  grid-row-end: 16;
+  border: 1px solid $obscuro;
+  align-self: center;
+}

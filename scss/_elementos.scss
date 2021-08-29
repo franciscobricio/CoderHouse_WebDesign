@@ -1,0 +1,233 @@
+/* --------------------------------------------------
+ELEMENTOS.SCSS
+----------------------------------------------------*/
+
+/* Menu Encabezado de la página */
+header {
+  padding: 0.8em 0;
+  box-shadow: 2px 2px 10px $blanco2;
+}
+
+.contenedor {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.contenedor-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 720px) {
+  .contenedor {
+    text-align: center;
+  }
+
+  .contenedor-nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+
+  nav li {
+    margin-left: 1em;
+  }
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  color: $blanco;
+}
+
+/* Imagenes */
+.img {
+  width: 95%;
+}
+
+.img:hover {
+  opacity: 0.8;
+}
+
+/* Formularios */
+
+.formcontenedor {
+  width: 500px;
+  clear: both;
+  font-family: $fuente, sans-serif;
+}
+
+.formcontenedor input {
+  width: 100%;
+  clear: both;
+  font-family: $fuente, sans-serif;
+}
+
+input[type="text"],
+select {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid $blanco2;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 300px;
+  height: 150px;
+}
+
+input[type="reset"] {
+  background-color: $primario;
+  color: $blanco;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  background-color: $secundario;
+  color: $blanco;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: $secundario;
+}
+
+div {
+  border-radius: 5px;
+  background-color: $blanco2;
+  padding: 20px;
+}
+
+/* Listas */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: $blanco2;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: $blanco2;
+}
+
+li a:hover {
+  background-color: $gris;
+}
+
+.menuactivo {
+  color: $blanco2;
+  background-color: $primario;
+}
+
+/* Bloques - Box Modeling */
+
+.centercontenedor {
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 720px) {
+  .centercontenedor {
+    text-align: center;
+    width: 80%;
+  }
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.avatar {
+  box-shadow: 0px 3px 10px #888;
+  float: left;
+  margin: 10px;
+}
+
+.bio {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 970px) {
+  .bio {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+section {
+  margin: 10px;
+  align-items: center;
+}
+
+section article {
+  display: flex;
+  align-items: top;
+  font-family: $fuente, sans-serif;
+  color: $gris;
+  background-color: $blanco2;
+  width: 400px;
+  height: 300px;
+  padding: 30px;
+  box-align: center;
+}
+
+section article p {
+  line-height: 4;
+}
+
+#contacto {
+  z-index: 9;
+  font-size: small;
+  text-align: center;
+  color: $obscuro;
+  background-color: $amarillomahler;
+
+  position: fixed;
+  top: 160px;
+  right: 35px;
+}
+
+@media (max-width: 720px) {
+  #contacto {
+    font-size: x-small;
+    text-align: center;
+    color: $obscuro;
+    background-color: transparent;
+    height: 10px;
+    width: 40px;
+
+    position: absolute;
+    top: 110px;
+    right: 35px;
+  }
+}

@@ -1,0 +1,27 @@
+/* --------------------------------------------------
+TABLAS.SCSS
+----------------------------------------------------*/
+
+/* Tablas */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr:nth-child(even) {
+  background-color: $blanco2;
+}
+
+th {
+  background-color: $secundario;
+  color: $blanco;
+  td {
+    text-align: left;
+    padding: 8px;
+  }
+}
+
+tr {
+  font-family: $fuente, sans-serif;
+  color: $gris;
+}

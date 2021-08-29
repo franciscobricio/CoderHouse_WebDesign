@@ -1,0 +1,30 @@
+/* --------------------------------------------------
+VARIABLES.SCSS
+----------------------------------------------------*/
+
+/* Variables */
+
+/* Fuente */
+$fuente: "Montserrat";
+$fuente-cita: "Times New Roman";
+
+/* Colores */
+$primario: #4f4b76;
+$secundario: #00873d;
+$terciario: #2f0087;
+$obscuro: #292929;
+$gris: #777;
+$blanco: #fff;
+$blanco2: #ccc;
+$amarillomahler: #fbbf0e;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fullwidth: 90%;
+  font-family: $fuente;
+}

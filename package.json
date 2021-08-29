@@ -1,0 +1,23 @@
+{
+  "name": "coderhouse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franciscobricio/CoderHouse_WebDesign.git"
+  },
+  "author": "Francisco Bricio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franciscobricio/CoderHouse_WebDesign/issues"
+  },
+  "homepage": "https://github.com/franciscobricio/CoderHouse_WebDesign#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}
